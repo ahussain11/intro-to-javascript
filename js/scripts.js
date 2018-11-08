@@ -69,8 +69,21 @@
 // const response = confirm('Are you sure?');
 
 // console.log(response);
-const favNum = prompt('what is your favorite number?');
+// const favNum = prompt('what is your favorite number?');
 
-const realNum = parseInt(favNum);
+// const realNum = parseInt(favNum);
 
-console.log(favNum);
+// console.log(favNum);
+
+
+
+const firstName = prompt('What is your first name?');
+console.log(firstName);
+
+const lastName = prompt('How about your last name?');
+alert(lastName);
+
+const birthday = new Date(prompt('What is your birthday?'));
+confirm(`is ${birthday} correct?`);
+
+alert(`Your birthday is: ${birthday}`);
