@@ -174,26 +174,33 @@
 const userName = prompt('Hey there! What is your name?');
 const favColor = prompt(`Hey, ${userName}! What is your favorite color?`, 'ex. red, orange, yellow, green, blue, pink, purple, black, white, or grey');
 
-if (favColor === 'red' || favColor === 'Red') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'orange' || favColor === 'Orange') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'yellow' || favColor === 'Yellow') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'green' || favColor === 'Green') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'blue' || favColor === 'Blue') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'pink' || favColor === 'Pink') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'purple' || favColor === 'Purple') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'black' || favColor === 'Black') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'white' || favColor === 'White') {
-    alert(`${favColor} is a great choice, ${userName}!`);
-} else if (favColor === 'grey' || favColor === 'Grey') {
+// add in toLowerCase()
+// if (favColor === 'red' || favColor === 'Red') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'orange' || favColor === 'Orange') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'yellow' || favColor === 'Yellow') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'green' || favColor === 'Green') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'blue' || favColor === 'Blue') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'pink' || favColor === 'Pink') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'purple' || favColor === 'Purple') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'black' || favColor === 'Black') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'white' || favColor === 'White') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else if (favColor === 'grey' || favColor === 'Grey') {
+//     alert(`${favColor} is a great choice, ${userName}!`);
+// } else {
+//     alert("Hm, that didn't work...try again.");
+// }
+
+if (favColor === 'red'.toLowerCase() || 'orange' || 'yellow' || 'green' || 'blue' || 'pink' || 'purple' || 'black' || 'white' || 'grey' || 'gray') {
     alert(`${favColor} is a great choice, ${userName}!`);
 } else {
-
+    alert("Hm, that didn't work...Please reload the page and try again.");
 }
