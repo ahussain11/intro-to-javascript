@@ -172,7 +172,7 @@
 // }
 
 const userName = prompt('Hey there! What is your name?');
-const favColor = prompt(`Hey, ${userName}! What is your favorite color?`, 'ex. red, orange, yellow, green, blue, pink, purple, black, white, or grey');
+const favColor = prompt(`Hey, ${userName}! What is your favorite color?`, 'ex. red, orange, yellow, green, blue, pink, purple, black, white, or grey').toLowerCase();
 
 // add in toLowerCase()
 // if (favColor === 'red' || favColor === 'Red') {
@@ -199,7 +199,7 @@ const favColor = prompt(`Hey, ${userName}! What is your favorite color?`, 'ex. r
 //     alert("Hm, that didn't work...try again.");
 // }
 
-if (favColor === 'red'.toLowerCase() || 'orange' || 'yellow' || 'green' || 'blue' || 'pink' || 'purple' || 'black' || 'white' || 'grey' || 'gray') {
+if (favColor === 'red' || 'orange' || 'yellow' || 'green' || 'blue' || 'pink' || 'purple' || 'black' || 'white' || 'grey' || 'gray') {
     alert(`${favColor} is a great choice, ${userName}!`);
 } else {
     alert("Hm, that didn't work...Please reload the page and try again.");
